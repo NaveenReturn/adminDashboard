@@ -177,7 +177,7 @@ getALluser()
        const {data} =await axios.delete(`/api/v1/user/delete/${id}`)
         if(data.success){
          setTimeout(()=>{
-          window.location.href("/dashboard");
+          window.location.href = "/dashboard";
          },150)
         }
    }
